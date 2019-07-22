@@ -2,64 +2,95 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css"
-    href="style.css"
-    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 
 <body>
-    <form>
-        <fieldset>
-            <legend class="nice">
-                <H1>Payment slip</H1>
-            </legend>
-            <p>please fill the following.</p>
-            <fieldset>
-                <legend class="hero"><strong>Sex</strong></legend>
-                <input type="radio" name="Sex" value="Male" checked="checked"> Male<br>
-                <input type="radio" name="Sex" value="Female">Female
+    <div id="wrap">
+        <form>
+            <fieldset class="style-blue">
+                <legend class="nice">
+                    <H1 id="put-blue">Payment <span id="paint">Form</span></H1>
+                </legend>
+                <p>Required fields are followed by<abbr title="Required">*</abbr></p>
+                <h2>Contact Information</h2>
+                <div id="cover">
+                    <fieldset class="contain">
+                        <legend class="hero"><strong>Sex</strong></legend>
+                        <input type="radio" name="Sex" value="Male" checked="checked">Male<br>
+                        <input type="radio" name="Sex" value="Female">Female
+                    </fieldset>
+                </div>
+
+                <br><br><br><br><br>
+                <diV class="name">
+                    <label for="name"><b>Name:</b><abbr title="Required">*</abbr></label>
+                    <input type="text" id="name" name="name" placeholder="enter full name...">
+                </diV>
+
+                <br><br>
+                <div class="email">
+                    <label for="email"><b>E-mail:</b><abbr title="Required">*</abbr></label>
+                    <input type="email" id="email" name="email" placeholder="@gmail.com...">
+                </div>
+
+                <br><br>
+                <div class="pass">
+                    <label for="code"><b>Password:</b><abbr title="Required">*</abbr></label>
+                    <input type="text" id="code" name="code" placeholder="more than 8 characters">
+                </div>
+
+                <br>
+
+                <h2>Payment Information</h2>
+                <div class="card">
+                    <label for="card"><b>Card type:</b></label>
+                    <select name="card-type" id="card">
+                        <option value="master-card">Master-Card</option>
+                        <option value="verve">verve</option>
+                        <option value="Debit">Debit</option>
+                        <option value="Visa">Visa</option>
+                    </select>
+                </div>
+
+                <br><br>
+                <div class="bank">
+                    <label for="bank"><b>Bank:</b></label>
+                    <select name="bank-name" id="bank">
+                        <option value="First Bank">First bank</option>
+                        <option value="Diamond bank">Diamond bank</option>
+                        <option value="Gtbank">GTbank</option>
+                        <option value="Eco Bank">Eco Bank</option>
+                    </select>
+                </div>
+
+                <br><br>
+                <div class="pin">
+                    <label for="number"><b>Card number:</b><abbr title="Required">*</abbr></label>
+                    <input type="text" id="number" name="number" placeholder="enter 4 digit pin...">
+                </div>
+
+                <br>
+                <br>
+                <div class="date">
+                    <label for="date"><b>Expiration date:</b><abbr title="Required">*</abbr></label>
+                    <input type="text" id="date" name="date" placeholder="mm/yy">
+                    <br><i>formatted as mm/yy</i>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="wrap-but">
+                    <button type="submit">Validate the Payment</button>
+                </div>
+
             </fieldset>
-            <br>
-            <label for="name"><b>Name:</b></label>
-            <input type="text" id="name" name="name" placeholder="enter full name...">
-            <br><br>
-            <label for="email"><b>Email:</b></label>
-            <input type="email" id="email" name="email" placeholder="@gmail.com...">
-            <br><br>
-            <label for="Phone"><b>Phone:</b></label>
-            <input type="text" id="phone" name="phone" placeholder="+234...">
-            <br>
-            <hr>
-            <h3>Bank Details</h3>
-            <label for="card"><b>Card:</b></label>
-            <select name="card-type">
-                <option value="master-card">Master-Card</option>
-                <option value="verve">verve</option>
-                <option value="Debit">Debit</option>
-                <option value="Visa">Visa</option>
-            </select>
-            <br><br>
-            <label for="bank"><b>Bank:</b></label>
-            <select name="bank-name">
-                <option value="First Bank">First bank</option>
-                <option value="Diamond bank">Diamond bank</option>
-                <option value="Gtbank">GTbank</option>
-                <option value="Eco Bank">Eco Bank</option>
-            </select>
-            <br><br>
-            <label for="Pin"><b>Pin:</b></label>
-            <input type="text" id="Pin" name="Pin" placeholder="enter 4 digit pin...">
-            <br>
-            <br>
-            <button type="submit">Done</button>
-        </fieldset>
-    </form>
-
-
-
+        </form>
+    </div>
 </body>
 
 </html>
